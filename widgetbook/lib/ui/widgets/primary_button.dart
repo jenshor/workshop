@@ -7,3 +7,13 @@ import 'package:widgetbook/widgetbook.dart';
 import 'package:widgetbook_annotation/widgetbook_annotation.dart';
 
 /// Add Widgetbook use-case here
+@UseCase(type: PrimaryButton, name: 'Default')
+Widget buildUseCase(BuildContext context) {
+  return PrimaryButton(
+    content: context.knobs.string(
+      label: 'content',
+      initialValue: 'Widgetbook Workshop',
+    ),
+    onPressed: () {},
+  );
+}
