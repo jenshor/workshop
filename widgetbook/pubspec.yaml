@@ -1,0 +1,32 @@
+name: widgetbook_workspace
+publish_to: "none"
+version: 0.1.0
+
+environment:
+  sdk: ^3.9.0
+  flutter: ^3.35.0
+
+dependencies:
+  assets:
+    path: ../assets
+  flutter:
+    sdk: flutter
+  flutter_riverpod: ^2.6.1
+  font_awesome_flutter: ^10.7.0
+  groceries_app:
+    path: ../
+  url_launcher: ^6.3.2
+  widgetbook:
+    git:
+      url: https://github.com/widgetbook/widgetbook.git
+      ref: feat/mcp-server
+      path: packages/widgetbook
+  widgetbook_annotation: ^3.7.0
+
+dev_dependencies:
+  build_runner: ^2.7.0
+  very_good_analysis: ^6.0.0
+  widgetbook_generator: ^3.16.0
+
+flutter:
+  uses-material-design: true
